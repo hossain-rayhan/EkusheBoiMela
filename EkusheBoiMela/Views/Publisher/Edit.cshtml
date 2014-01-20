@@ -1,0 +1,74 @@
+﻿@model EkusheBoiMela.Model.Entity.Publisher
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Publisher</legend>
+
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NameInEnglish)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.NameInEnglish)
+            @Html.ValidationMessageFor(model => model.NameInEnglish)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.StallNo)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.StallNo)
+            @Html.ValidationMessageFor(model => model.StallNo)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.StallLat)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.StallLat)
+            @Html.ValidationMessageFor(model => model.StallLat)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.StallLong)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.StallLong)
+            @Html.ValidationMessageFor(model => model.StallLong)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CreationDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CreationDate)
+            @Html.ValidationMessageFor(model => model.CreationDate)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+

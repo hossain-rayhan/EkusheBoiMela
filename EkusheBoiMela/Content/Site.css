@@ -1,0 +1,386 @@
+﻿/*----------------------------------------------------------
+The base color for this template is #5c87b2. If you'd like
+to use a different color start by replacing all instances of
+#5c87b2 with your new color.
+----------------------------------------------------------*/
+body {
+    /*background-color: gray;*/
+    font-size: .85em;
+    font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    color: #696969;
+}
+
+ul, li {
+    list-style-type: none;
+}
+a:visited {
+    color: #505abc;
+}
+
+a:hover {
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active {
+    color: #12eb87;
+}
+
+p, ul {
+    /*margin-bottom: 20px;*/
+    line-height: 1.6em;
+}
+
+header,
+footer,
+section {
+    display: block;
+}
+
+/* HEADINGS   
+----------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5em;
+    color: #000;
+}
+
+h1 {
+    font-size: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    padding: 0 0 10px 0;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+h5, h6 {
+    font-size: 1em;
+}
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+/* you can specify a greater or lesser percentage for the 
+page width. Or, you can specify an exact pixel width. */
+.page {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+#banner-container {
+    position: relative;
+    height:100px;
+    /*background-image: url("../Content/Images/banner.png");*/
+}
+    #banner-container h1 {
+    font-weight: bold;
+    font-style:italic;
+    padding-top: 10px;
+    font-size:xx-large;
+    padding-right: 10px;
+    text-align:right;
+    margin: 0;
+    color: red;
+    }
+
+    #banner-container p {
+    text-align:right;
+    padding-right: 10px;
+    color: black;
+    font-size:medium;
+    }
+    #menu-bar {
+    position:relative;
+    height:38px;
+    background-color:#0acbb9;
+}
+
+#nav { 
+    float: right;
+    padding: 0% 0px;
+    position: relative;
+    margin: 0;
+    text-align: right;
+}
+#nav li { float: left; position: relative; }
+#nav li a {  
+    padding: 10px 20px;
+    line-height: 2.8em;
+    background-color:#0acbb9;
+    list-style-type:none;
+    text-decoration:none;    
+    color: #fff; 
+}
+#nav li ul { display:none; position: absolute; top: 38px; left: 0px; width: 123px; background: red; }
+#nav li:hover ul { display: inline-block; }
+#nav li ul li a { 
+    display: inline-block;
+    width:105px;
+    background-color:#0acbb9; 
+    float:left;
+    padding-bottom:1px;
+    padding-top:1px;
+}
+
+
+#nav li a:hover {
+    background-color:red;
+    text-decoration: none;
+}
+
+#nav li a:active {
+    background-color: #a6e2a6;
+    text-decoration: none;
+}
+
+#nav li.selected a {
+    background-color: #fff;
+    color: #000;
+}
+
+#main {
+    padding: 30px 30px 15px 30px;
+    background-color: #fff;
+    -webkit-border-radius: 4px 0 0 0;
+    -moz-border-radius: 4px 0 0 0;
+    border-radius: 4px 0 0 0;
+}
+
+footer, 
+#footer {
+    background-color:powderblue ;
+    color: red;
+    padding: 20px 0;
+    text-align: center;
+    line-height: normal;
+    margin: 0 0 30px 0;
+    font-size: .9em;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+
+}
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+
+
+/* FORM LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+input[type="text"], 
+input[type="password"] {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.2em;
+    color: #444;
+    width: 200px;
+}
+
+select {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.2em;
+    color: #444;
+}
+
+input[type="submit"] {
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+/* TABLE
+----------------------------------------------------------*/
+
+table {
+    border: solid 1px #e8eef4;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 5px;
+    border: solid 1px #e8eef4;
+}
+
+table th {
+    padding: 6px 5px;
+    text-align: left;
+    background-color: #e8eef4;
+    border: solid 1px #e8eef4;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+.clear {
+    clear: both;
+}
+
+.error {
+    color: Red;
+}
+
+div#title {
+    position:relative;
+    background-color:black;
+    float: left;
+    text-align: left;
+}
+
+#logindisplay {
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    margin: 10px;
+    color: White;
+}
+
+#logindisplay a:link {
+    color: white;
+    text-decoration: underline;
+}
+
+#logindisplay a:visited {
+    color: white;
+    text-decoration: underline;
+}
+
+#logindisplay a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #ff0000;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/* Styles for editor and display helpers
+----------------------------------------------------------*/
+.display-label, 
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.display-field, 
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+.text-box {
+    width: 30em;
+}
+
+.text-box.multi-line {
+    height: 6.5em;
+}
+
+.tri-state {
+    width: 6em;
+}
+
+
+
+.donate-button {
+    top: 200px;
+    left: 200px;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.moto1 {
+    position: absolute;
+    left: 22%;
+    color: red;
+}
+.moto2 {
+    position: absolute;
+    left: 51%;
+    color: red;
+}
+
+.logo {
+    position: absolute;
+    left: 40%;
+    top: 10px;
+    width:80px;
+    height:80px;
+}
+
+
+#loginBox {
+    margin-left: 30%;
+    margin-top: 150px;
+    width: 600px;
+    height: 300px;
+    background-color: #F2F2F2;
+    border-bottom-style: outset;
+    border-color: #5882FA;
+}
+
+#loginBox h3 {
+    text-align: right;
+    color: red;
+    font-weight: bold;
+    padding-right: 5%;
+    padding-top: 6%;
+}
+
+#loginForm {
+    padding-left: 25%;
+}
+
+#homePageBox {
+    margin-top: 50px;
+    margin-left:100px;
+    margin-bottom: 200px;
+}

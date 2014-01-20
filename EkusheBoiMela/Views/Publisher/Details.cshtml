@@ -1,0 +1,57 @@
+﻿@model EkusheBoiMela.Model.Entity.Publisher
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Publisher</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.NameInEnglish)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NameInEnglish)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.StallNo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StallNo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.StallLat)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StallLat)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.StallLong)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StallLong)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CreationDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CreationDate)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

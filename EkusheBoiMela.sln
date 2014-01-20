@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EkusheBoiMela", "EkusheBoiMela\EkusheBoiMela.csproj", "{B4BB2993-C2F4-47A5-A91B-72E8CED81359}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EkusheBoiMela.Model", "EkusheBoiMela.Model\EkusheBoiMela.Model.csproj", "{767BDAF9-5C73-4E15-8D97-CB278D6AF05E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EkusheBoiMela.Repository", "EkusheBoiMela.Repository\EkusheBoiMela.Repository.csproj", "{AE2B1E28-5EA8-48C0-AC04-53014B8A1229}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4BB2993-C2F4-47A5-A91B-72E8CED81359}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4BB2993-C2F4-47A5-A91B-72E8CED81359}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4BB2993-C2F4-47A5-A91B-72E8CED81359}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4BB2993-C2F4-47A5-A91B-72E8CED81359}.Release|Any CPU.Build.0 = Release|Any CPU
+		{767BDAF9-5C73-4E15-8D97-CB278D6AF05E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{767BDAF9-5C73-4E15-8D97-CB278D6AF05E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{767BDAF9-5C73-4E15-8D97-CB278D6AF05E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{767BDAF9-5C73-4E15-8D97-CB278D6AF05E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE2B1E28-5EA8-48C0-AC04-53014B8A1229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE2B1E28-5EA8-48C0-AC04-53014B8A1229}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE2B1E28-5EA8-48C0-AC04-53014B8A1229}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE2B1E28-5EA8-48C0-AC04-53014B8A1229}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

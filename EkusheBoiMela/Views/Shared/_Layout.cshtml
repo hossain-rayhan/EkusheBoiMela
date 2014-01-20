@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - Wellcome to Badhan !!! </title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/themes/base/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/helperLibraries")
+</head>
+<body>
+    <div class="page">
+        <div id="banner-container">
+            <h1>একুশে বই মেলা</h1>
+            <br />
+            <p style="color: red">আমার ভাইয়ের রক্তে রাজ্ঞানো একুশে ফেব্রুয়ারী, আমি কি ভুলিতে পারি ...</p>
+        </div>
+
+        <div id="menu-bar">
+            <ul style="float: left" id="nav">
+                <li>@Html.ActionLink("Logout", "Logout", "Home") </li>
+            </ul>
+            <ul id="nav">
+                
+                @if ((string)HttpContext.Current.Session["loggedInUserRole"] == "admin")
+                {
+                    <li>@Html.ActionLink("Publisher", "Index", "Publisher") </li>                                       
+                    <li>@Html.ActionLink("Author", "Index", "Author") </li>  
+                    <li>@Html.ActionLink("Catagory", "Index", "Catagory") </li>  
+                    <li>@Html.ActionLink("Book", "Index", "Book") </li> 
+                }
+
+                <li>@Html.ActionLink("Home", "Index", "Home") </li>
+            </ul>
+        </div>
+        <div id="main">
+            @RenderBody()
+        </div>
+        <div id="footer">
+            Copyright © 2014 AppSomehow & EATL. All rights reserved.
+        </div>
+    </div>
+
+</body>
+</html>

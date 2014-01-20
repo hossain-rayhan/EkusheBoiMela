@@ -1,0 +1,36 @@
+﻿<head>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+</head>
+@model EkusheBoiMela.Model.Entity.User
+
+@{
+    ViewBag.Title = "Login";
+}
+
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+
+
+    <div id="loginBox">
+        <h3>একুশে বই মেলা </h3>
+        <hr />
+
+        <div id="loginForm">
+            <div class="input-prepend">
+                User Name: 
+                @Html.EditorFor(model => model.Name)
+            </div>
+            <div class="input-prepend" style="margin-top: 10px;">
+                Password:&nbsp;&nbsp;
+                 @Html.PasswordFor(model => model.Password)
+            </div>
+            <div style="margin-top: 10px">
+                <input type="submit" value="Login" class="btn-primary" />
+            </div>
+        </div>
+    </div>
+
+        
+}

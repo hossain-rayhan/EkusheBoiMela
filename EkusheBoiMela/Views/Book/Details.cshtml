@@ -1,0 +1,78 @@
+﻿@model EkusheBoiMela.Model.Entity.Book
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Book</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Isbn)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Isbn)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Title)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Title)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TitleInEnglish)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TitleInEnglish)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Author.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Author.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Catagory.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Catagory.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Publisher.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Publisher.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Price)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Price)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Description)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CreationDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CreationDate)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
